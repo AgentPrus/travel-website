@@ -5,11 +5,36 @@
   overflow: hidden;
 }
 
+// Nav Links
+.current {
+  color: #f2f2f2 !important;
+}
+
 // Home Blocks
 .home-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
+}
+
+.post-nav {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+
+  .btn {
+    &-up {
+      border: 1px solid $light-color;
+      margin-bottom: 0.25rem;
+    }
+
+    &-down {
+      border: 1px solid $light-color;
+    }
+  }
 }
 
 // Backgrounds
@@ -19,6 +44,14 @@
 
 .bg-primary {
   background-color: $primary-color;
+}
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-purple {
+  background-color: $third-color;
 }
 
 .text-center {
@@ -79,6 +112,14 @@
   margin: 0 2.5rem;
 }
 
+// Flexes
+.align-self-flex-start {
+  align-self: flex-start;
+}
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
 // Utilities
 .l-heading {
   font-size: 2.5rem;
@@ -119,8 +160,17 @@
   color: $secondary-color;
 }
 
+.third-color {
+  color: $third-color;
+}
+
+.disable {
+  color: #ccc;
+}
+
 .section-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }

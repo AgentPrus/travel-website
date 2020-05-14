@@ -94,4 +94,76 @@
         center/cover;
     }
   }
+
+  &-d {
+    .content {
+      .blockquote {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .lead {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .btn {
+        @include button(rgba(255, 255, 255, 0.75), #fff);
+        align-self: center;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333
+        url("../images/person-in-beige-top-on-mountain-cliff-1134188.jpg")
+        no-repeat center/cover;
+    }
+  }
+
+  &-e {
+    .content {
+      .blockquote {
+        justify-content: flex-end;
+      }
+      .btn {
+        @include button($light-color, $third-color);
+        align-self: center;
+
+        &:hover {
+          background: #f4f4f4;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333 url("../images/mountain-sunrise.jpeg") no-repeat
+        center/cover;
+    }
+  }
+
+  &-f {
+    .content {
+      .blockquote {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .lead {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .btn {
+        @include button(rgba(255, 255, 255, 0.75), #fff);
+        align-self: center;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333 url("../images/alone-animal-bird-clouds-395196.jpg")
+        no-repeat center/cover;
+    }
+  }
 }

@@ -15,16 +15,38 @@ a {
   margin: auto;
   overflow: hidden; }
 
+.current {
+  color: #f2f2f2 !important; }
+
 .home-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh; }
+
+.post-nav {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 0 2rem; }
+  .post-nav .btn-up {
+    border: 1px solid #bbb;
+    margin-bottom: 0.25rem; }
+  .post-nav .btn-down {
+    border: 1px solid #bbb; }
 
 .bg-dark {
   background-color: #1c1c1c; }
 
 .bg-primary {
   background-color: #1abc9c; }
+
+.bg-secondary {
+  background-color: #3498db; }
+
+.bg-purple {
+  background-color: #9b59b6; }
 
 .text-center {
   text-align: center; }
@@ -77,6 +99,12 @@ a {
 .mx-4 {
   margin: 0 2.5rem; }
 
+.align-self-flex-start {
+  align-self: flex-start; }
+
+.align-self-flex-end {
+  align-self: flex-end; }
+
 .l-heading {
   font-size: 2.5rem; }
 
@@ -107,10 +135,17 @@ a {
 .secondary-color {
   color: #3498db; }
 
+.third-color {
+  color: #9b59b6; }
+
+.disable {
+  color: #ccc; }
+
 .section-text {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
 #main-header {
   position: sticky;
@@ -158,6 +193,17 @@ a {
     right: 25px;
     font-size: 36px;
     margin-left: 50px; }
+
+#main-footer {
+  padding: 4rem;
+  background: #1c1c1c;
+  color: #bbb; }
+  #main-footer .social a {
+    padding: 0 1rem;
+    color: #bbb;
+    transition: color 0.5s ease; }
+    #main-footer .social a:hover {
+      color: #f2f2f2; }
 
 #showcase {
   background: #333 url("../images/showcase-img.jpeg") no-repeat center/cover;
@@ -250,3 +296,69 @@ a {
 
 #home-c .section-image {
   background: #333 url("../images/mountain-house.jpeg") no-repeat center/cover; }
+
+#home-d .content .blockquote {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-d .content .lead {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-d .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-d .content .btn:hover {
+    opacity: 0.75; }
+
+#home-d .section-image {
+  background: #333 url("../images/person-in-beige-top-on-mountain-cliff-1134188.jpg") no-repeat center/cover; }
+
+#home-e .content .blockquote {
+  justify-content: flex-end; }
+
+#home-e .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #9b59b6;
+  padding: 1rem 2rem;
+  border: 1px solid #bbb;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-e .content .btn:hover {
+    background: #f4f4f4; }
+
+#home-e .section-image {
+  background: #333 url("../images/mountain-sunrise.jpeg") no-repeat center/cover; }
+
+#home-f .content .blockquote {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-f .content .lead {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-f .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-f .content .btn:hover {
+    opacity: 0.75; }
+
+#home-f .section-image {
+  background: #333 url("../images/alone-animal-bird-clouds-395196.jpg") no-repeat center/cover; }
