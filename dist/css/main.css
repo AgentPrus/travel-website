@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.home-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh; }
+
+.bg-dark {
+  background-color: #1c1c1c; }
+
+.bg-primary {
+  background-color: #1abc9c; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 1.5rem 0; }
+
+.py-3 {
+  padding: 2rem 0; }
+
+.py-4 {
+  padding: 2.5rem 0; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 1.5rem; }
+
+.px-3 {
+  padding: 0 2rem; }
+
+.px-4 {
+  padding: 0 2.5rem; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 1.5rem 0; }
+
+.my-3 {
+  margin: 2rem 0; }
+
+.my-4 {
+  margin: 2.5rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.mx-2 {
+  margin: 0 1.5rem; }
+
+.mx-3 {
+  margin: 0 2rem; }
+
+.mx-4 {
+  margin: 0 2.5rem; }
+
+.l-heading {
+  font-size: 2.5rem; }
+
+.white-text {
+  color: #fff; }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5rem; }
+
+.blockquote {
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  color: #bbb;
+  font-size: 1.5rem; }
+  .blockquote p {
+    padding: 0 5rem; }
+
+.primary-color {
+  color: #1abc9c; }
+
+.secondary-color {
+  color: #3498db; }
+
+.section-text {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 3; }
+  #main-header .container {
+    display: flex;
+    justify-content: space-between; }
+    #main-header .container #nav-brand {
+      color: #fff;
+      font-size: 2rem; }
+    #main-header .container .nav-menu {
+      color: #fff;
+      padding-top: 1rem;
+      transition: opacity 0.5s ease; }
+      #main-header .container .nav-menu .nav-text {
+        font-size: 1.25rem; }
+      #main-header .container .nav-menu:hover {
+        opacity: 0.5; }
+
+#side-nav {
+  float: right;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+  #side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+    #side-nav a:hover {
+      color: #f1f1f1; }
+  #side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+#showcase {
+  background: #333 url("../images/showcase-img.jpeg") no-repeat center/cover;
+  height: 100vh;
+  display: flex; }
+  #showcase::before {
+    content: "";
+    position: absolute;
+    top: 50;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); }
+  #showcase .container {
+    z-index: 2; }
+    #showcase .container .btn {
+      margin-top: 1rem;
+      display: inline-block;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: 1px solid #bbb;
+      font-size: 1.25rem;
+      font-weight: 500;
+      transition: all 0.5s ease;
+      width: 100px; }
+      #showcase .container .btn:hover {
+        background: #bbb;
+        color: #1c1c1c; }
+
+#home-a .content .blockquote {
+  justify-content: flex-end; }
+
+#home-a .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #1abc9c;
+  padding: 1rem 2rem;
+  border: 1px solid #bbb;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-a .content .btn:hover {
+    background: #f4f4f4; }
+
+#home-a .section-image {
+  background: #333 url("../images/person.jpg") no-repeat center/cover; }
+
+#home-b .content .blockquote {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-b .content .lead {
+  color: rgba(255, 255, 255, 0.75); }
+
+#home-b .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-b .content .btn:hover {
+    opacity: 0.75; }
+
+#home-b .section-image {
+  background: #333 url("../images/man-sitting-on-edge-facing-sunset-915972.jpg") no-repeat center/cover; }
+
+#home-c .content .blockquote {
+  justify-content: flex-end; }
+
+#home-c .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #3498db;
+  padding: 1rem 2rem;
+  border: 1px solid #bbb;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  width: 100px;
+  align-self: center; }
+  #home-c .content .btn:hover {
+    background: #f4f4f4; }
+
+#home-c .section-image {
+  background: #333 url("../images/mountain-house.jpeg") no-repeat center/cover; }

@@ -1,0 +1,126 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Home Blocks
+.home-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+// Backgrounds
+.bg-dark {
+  background-color: $dark-color;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 2.5rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 1.5rem;
+}
+.px-3 {
+  padding: 0 2rem;
+}
+.px-4 {
+  padding: 0 2.5rem;
+}
+
+// Margin
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 2.5rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 1.5rem;
+}
+.mx-3 {
+  margin: 0 2rem;
+}
+.mx-4 {
+  margin: 0 2.5rem;
+}
+
+// Utilities
+.l-heading {
+  font-size: 2.5rem;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 5rem;
+}
+
+.blockquote {
+  border-top: 1px solid $light-color;
+  border-bottom: 1px solid $light-color;
+  display: flex;
+  color: $light-color;
+  font-size: 1.5rem;
+
+  p {
+    padding: 0 5rem;
+  }
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+.section-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,97 @@
+#showcase {
+  background: #333 url("../images/showcase-img.jpeg") no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+
+  // Image overlay
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .container {
+    z-index: 2;
+    .btn {
+      @include button($light-color, #fff);
+      &:hover {
+        background: $light-color;
+        color: $dark-color;
+      }
+    }
+  }
+}
+
+#home {
+  &-a {
+    .content {
+      .blockquote {
+        justify-content: flex-end;
+      }
+      .btn {
+        @include button($light-color, $primary-color);
+        align-self: center;
+
+        &:hover {
+          background: #f4f4f4;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333 url("../images/person.jpg") no-repeat center/cover;
+    }
+  }
+
+  &-b {
+    .content {
+      .blockquote {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .lead {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .btn {
+        @include button(rgba(255, 255, 255, 0.75), #fff);
+        align-self: center;
+
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333
+        url("../images/man-sitting-on-edge-facing-sunset-915972.jpg") no-repeat
+        center/cover;
+    }
+  }
+
+  &-c {
+    .content {
+      .blockquote {
+        justify-content: flex-end;
+      }
+      .btn {
+        @include button($light-color, $secondary-color);
+        align-self: center;
+
+        &:hover {
+          background: #f4f4f4;
+        }
+      }
+    }
+
+    .section-image {
+      background: #333 url("../images/mountain-house.jpeg") no-repeat
+        center/cover;
+    }
+  }
+}
