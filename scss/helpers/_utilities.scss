@@ -20,18 +20,19 @@
 .post-nav {
   width: 2rem;
   height: 2rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  padding: 0 2rem;
+  display: block;
 
   .btn {
     &-up {
+      display: inline-block;
       border: 1px solid $light-color;
+      padding: 0.75rem;
       margin-bottom: 0.25rem;
     }
 
     &-down {
+      display: inline-block;
+      padding: 0.75rem;
       border: 1px solid $light-color;
     }
   }

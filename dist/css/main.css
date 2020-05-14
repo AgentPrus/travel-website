@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -26,14 +27,15 @@ a {
 .post-nav {
   width: 2rem;
   height: 2rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  padding: 0 2rem; }
+  display: block; }
   .post-nav .btn-up {
+    display: inline-block;
     border: 1px solid #bbb;
+    padding: 0.75rem;
     margin-bottom: 0.25rem; }
   .post-nav .btn-down {
+    display: inline-block;
+    padding: 0.75rem;
     border: 1px solid #bbb; }
 
 .bg-dark {
@@ -228,14 +230,43 @@ a {
       border: 1px solid #bbb;
       font-size: 1.25rem;
       font-weight: 500;
-      transition: all 0.5s ease;
-      width: 100px; }
+      transition: all 0.5s ease; }
       #showcase .container .btn:hover {
         background: #bbb;
         color: #1c1c1c; }
 
-#home-a .content .blockquote {
+.home-block:nth-child(odd) .content .blockquote {
   justify-content: flex-end; }
+
+.home-block:nth-child(odd) .content .btn {
+  align-self: center; }
+  .home-block:nth-child(odd) .content .btn:hover {
+    background: #f4f4f4; }
+
+.home-block:nth-child(odd) .post-nav {
+  margin-left: 2rem; }
+
+.home-block:nth-child(even) .content .blockquote {
+  color: rgba(255, 255, 255, 0.75); }
+
+.home-block:nth-child(even) .content .lead {
+  color: rgba(255, 255, 255, 0.75); }
+
+.home-block:nth-child(even) .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  align-self: center; }
+  .home-block:nth-child(even) .content .btn:hover {
+    opacity: 0.75; }
+
+.home-block:nth-child(even) .post-nav {
+  margin-right: 2rem; }
 
 #home-a .content .btn {
   margin-top: 1rem;
@@ -245,40 +276,13 @@ a {
   border: 1px solid #bbb;
   font-size: 1.25rem;
   font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-a .content .btn:hover {
-    background: #f4f4f4; }
+  transition: all 0.5s ease; }
 
 #home-a .section-image {
   background: #333 url("../images/person.jpg") no-repeat center/cover; }
 
-#home-b .content .blockquote {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-b .content .lead {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-b .content .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  font-size: 1.25rem;
-  font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-b .content .btn:hover {
-    opacity: 0.75; }
-
 #home-b .section-image {
   background: #333 url("../images/man-sitting-on-edge-facing-sunset-915972.jpg") no-repeat center/cover; }
-
-#home-c .content .blockquote {
-  justify-content: flex-end; }
 
 #home-c .content .btn {
   margin-top: 1rem;
@@ -288,40 +292,13 @@ a {
   border: 1px solid #bbb;
   font-size: 1.25rem;
   font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-c .content .btn:hover {
-    background: #f4f4f4; }
+  transition: all 0.5s ease; }
 
 #home-c .section-image {
   background: #333 url("../images/mountain-house.jpeg") no-repeat center/cover; }
 
-#home-d .content .blockquote {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-d .content .lead {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-d .content .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  font-size: 1.25rem;
-  font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-d .content .btn:hover {
-    opacity: 0.75; }
-
 #home-d .section-image {
   background: #333 url("../images/person-in-beige-top-on-mountain-cliff-1134188.jpg") no-repeat center/cover; }
-
-#home-e .content .blockquote {
-  justify-content: flex-end; }
 
 #home-e .content .btn {
   margin-top: 1rem;
@@ -331,34 +308,10 @@ a {
   border: 1px solid #bbb;
   font-size: 1.25rem;
   font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-e .content .btn:hover {
-    background: #f4f4f4; }
+  transition: all 0.5s ease; }
 
 #home-e .section-image {
   background: #333 url("../images/mountain-sunrise.jpeg") no-repeat center/cover; }
-
-#home-f .content .blockquote {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-f .content .lead {
-  color: rgba(255, 255, 255, 0.75); }
-
-#home-f .content .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  font-size: 1.25rem;
-  font-weight: 500;
-  transition: all 0.5s ease;
-  width: 100px;
-  align-self: center; }
-  #home-f .content .btn:hover {
-    opacity: 0.75; }
 
 #home-f .section-image {
   background: #333 url("../images/alone-animal-bird-clouds-395196.jpg") no-repeat center/cover; }

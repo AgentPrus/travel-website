@@ -27,19 +27,53 @@
   }
 }
 
+.home-block:nth-child(odd) {
+  .content {
+    .blockquote {
+      justify-content: flex-end;
+    }
+    .btn {
+      align-self: center;
+
+      &:hover {
+        background: #f4f4f4;
+      }
+    }
+  }
+  .post-nav {
+    margin-left: 2rem;
+  }
+}
+
+.home-block:nth-child(even) {
+  .content {
+    .blockquote {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    .lead {
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .btn {
+      @include button(rgba(255, 255, 255, 0.75), #fff);
+      align-self: center;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  .post-nav {
+    margin-right: 2rem;
+  }
+}
+
 #home {
   &-a {
     .content {
-      .blockquote {
-        justify-content: flex-end;
-      }
       .btn {
         @include button($light-color, $primary-color);
-        align-self: center;
-
-        &:hover {
-          background: #f4f4f4;
-        }
       }
     }
 
@@ -49,24 +83,6 @@
   }
 
   &-b {
-    .content {
-      .blockquote {
-        color: rgba(255, 255, 255, 0.75);
-      }
-      .lead {
-        color: rgba(255, 255, 255, 0.75);
-      }
-
-      .btn {
-        @include button(rgba(255, 255, 255, 0.75), #fff);
-        align-self: center;
-
-        &:hover {
-          opacity: 0.75;
-        }
-      }
-    }
-
     .section-image {
       background: #333
         url("../images/man-sitting-on-edge-facing-sunset-915972.jpg") no-repeat
@@ -76,16 +92,8 @@
 
   &-c {
     .content {
-      .blockquote {
-        justify-content: flex-end;
-      }
       .btn {
         @include button($light-color, $secondary-color);
-        align-self: center;
-
-        &:hover {
-          background: #f4f4f4;
-        }
       }
     }
 
@@ -96,24 +104,6 @@
   }
 
   &-d {
-    .content {
-      .blockquote {
-        color: rgba(255, 255, 255, 0.75);
-      }
-      .lead {
-        color: rgba(255, 255, 255, 0.75);
-      }
-
-      .btn {
-        @include button(rgba(255, 255, 255, 0.75), #fff);
-        align-self: center;
-
-        &:hover {
-          opacity: 0.75;
-        }
-      }
-    }
-
     .section-image {
       background: #333
         url("../images/person-in-beige-top-on-mountain-cliff-1134188.jpg")
@@ -123,16 +113,8 @@
 
   &-e {
     .content {
-      .blockquote {
-        justify-content: flex-end;
-      }
       .btn {
         @include button($light-color, $third-color);
-        align-self: center;
-
-        &:hover {
-          background: #f4f4f4;
-        }
       }
     }
 
@@ -143,24 +125,6 @@
   }
 
   &-f {
-    .content {
-      .blockquote {
-        color: rgba(255, 255, 255, 0.75);
-      }
-      .lead {
-        color: rgba(255, 255, 255, 0.75);
-      }
-
-      .btn {
-        @include button(rgba(255, 255, 255, 0.75), #fff);
-        align-self: center;
-
-        &:hover {
-          opacity: 0.75;
-        }
-      }
-    }
-
     .section-image {
       background: #333 url("../images/alone-animal-bird-clouds-395196.jpg")
         no-repeat center/cover;
