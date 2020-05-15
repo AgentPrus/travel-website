@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+html,
 body {
+  height: 100%; }
+
+body {
+  height: 100%;
   font-family: "Roboto", sans-serif;
   line-height: 1.5; }
 
@@ -53,6 +58,16 @@ a {
     display: inline-block;
     padding: 0.75rem;
     border: 1px solid #bbb; }
+
+.btn-submit {
+  font-size: 1rem;
+  width: 50%;
+  padding: 0.5rem 0;
+  color: #f4f4f4;
+  transition: all 0.5s ease; }
+  .btn-submit:hover {
+    background: #1abc9c;
+    color: #fff; }
 
 .bg-dark {
   background-color: #1c1c1c; }
@@ -165,6 +180,12 @@ a {
   justify-content: center;
   flex-direction: column; }
 
+.bottom-line {
+  width: 3rem;
+  height: 0.25rem;
+  background: #1abc9c;
+  margin: 0 auto 0.5rem auto; }
+
 #main-header {
   position: sticky;
   top: 0;
@@ -187,33 +208,44 @@ a {
       #main-header .container .nav-menu:hover {
         opacity: 0.5; }
 
-#side-nav {
-  float: right;
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 4;
   top: 0;
-  right: 0;
-  background-color: #111;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; }
-  #side-nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s; }
-    #side-nav a:hover {
-      color: #f1f1f1; }
-  #side-nav .close-btn {
+  transition: 0.5s; }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; }
+    .overlay-content a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 2rem;
+      display: block;
+      color: #818181;
+      transition: all 0.3s ease; }
+      .overlay-content a:hover {
+        color: #f1f1f1; }
+  .overlay .close-btn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px; }
+    top: 6rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    color: #818181;
+    transition: all 0.3s ease; }
+    .overlay .close-btn:hover {
+      color: #f1f1f1; }
+  @media screen and (max-width: 380px) {
+    .overlay .close-btn {
+      top: 2rem; } }
 
 #main-footer {
   padding: 4rem;
@@ -334,3 +366,28 @@ a {
 
 #home-f .section-image {
   background: #333 url("../images/alone-animal-bird-clouds-395196.jpg") no-repeat center/cover; }
+
+#contact {
+  min-height: 100%; }
+  #contact .text-input {
+    padding: 0.5rem 1rem; }
+  #contact form {
+    margin-top: 2rem; }
+  #contact .input-fields {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "name email" "subject phone" "message message";
+    margin-bottom: 1.5rem; }
+    @media screen and (max-width: 580px) {
+      #contact .input-fields {
+        grid-template-areas: "name name name" "email email email" "subject subject subject" "phone phone phone" "message message message"; } }
+    #contact .input-fields input[name="name"] {
+      grid-area: name; }
+    #contact .input-fields input[name="email"] {
+      grid-area: email; }
+    #contact .input-fields input[name="subject"] {
+      grid-area: subject; }
+    #contact .input-fields input[name="phone"] {
+      grid-area: phone; }
+    #contact .input-fields textarea[name="message"] {
+      grid-area: message; }

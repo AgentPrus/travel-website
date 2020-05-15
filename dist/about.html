@@ -20,21 +20,21 @@
   <body>
     <header id="main-header" class="bg-dark py-2">
       <div class="container text-center">
-        <a href="" id="nav-brand"
-          ><span class="primary-color">Adventure</span> Time</a
-        >
+        <a href="" id="nav-brand"><span>Adventure</span> Time</a>
         <a href="javascript:void(0)" class="nav-menu" onclick="openNav()">
           <i class="fas fa-bars fa-lg"></i> <span class="nav-text"> Menu</span>
         </a>
       </div>
     </header>
-    <div id="side-nav" class="text-center">
+    <div id="side-nav" class="overlay">
       <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"
         >&times;</a
       >
-      <a href="index.html">Home</a>
-      <a href="about.html" class="current">About</a>
-      <a href="contact.html">Contact</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="current">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
 
     <!-- Footer -->

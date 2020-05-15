@@ -65,6 +65,19 @@
   }
 }
 
+.btn-submit {
+  font-size: 1rem;
+  width: 50%;
+  padding: 0.5rem 0;
+  color: #f4f4f4;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
 // Backgrounds
 .bg-dark {
   background-color: $dark-color;
@@ -201,4 +214,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.bottom-line {
+  width: 3rem;
+  height: 0.25rem;
+  background: $primary-color;
+  margin: 0 auto 0.5rem auto;
 }
