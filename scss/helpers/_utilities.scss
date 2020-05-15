@@ -166,6 +166,13 @@
   font-size: 2.5rem;
 }
 
+.m-heading {
+  font-size: 2rem;
+  @media screen and(max-width: 450px) {
+    font-size: 1.25rem;
+  }
+}
+
 .white-text {
   color: #fff;
 }
@@ -221,4 +228,11 @@
   height: 0.25rem;
   background: $primary-color;
   margin: 0 auto 0.5rem auto;
+}
+
+#showcase-header {
+  width: 100%;
+  height: 100px;
+  background: #333 url("../images/showcase-img.jpeg") no-repeat 20% 30% / cover;
+  border-bottom: 2px solid $primary-color;
 }

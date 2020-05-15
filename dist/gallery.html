@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adventure Time | About</title>
+    <title>Adventure Time | Home</title>
     <!-- Google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -20,7 +20,9 @@
   <body>
     <header id="main-header" class="bg-dark py-2">
       <div class="container text-center">
-        <a href="" id="nav-brand"><span>Adventure</span> Time</a>
+        <a href="" id="nav-brand"
+          ><span class="white-text">Adventure</span> Time</a
+        >
         <a href="javascript:void(0)" class="nav-menu" onclick="openNav()">
           <i class="fas fa-bars fa-lg"></i> <span class="nav-text"> Menu</span>
         </a>
@@ -31,41 +33,46 @@
         >&times;</a
       >
       <div class="overlay-content">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="current">Home</a>
         <a href="gallery.html">Gallery</a>
-        <a href="about.html" class="current">About</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
     </div>
 
-    <section id="about" class="my-2">
-      <div class="container">
-        <h2 class="m-heading">
-          Sharing Your Explorer’s Story: Man and Mother Nature
-        </h2>
-        <small>By <span class="primary-color">Mike</span> & Friends 2020</small>
-        <img
-          src="./images/scenic-photo-of-lake-surrounded-by-trees-1903702.jpg"
-          alt=""
-        />
-        <h3 class="my-1">
-          Explore The <span class="primary-color">World</span> With Us
-        </h3>
-        <p class="lead">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum exercitation ullamco
-          laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-          et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-          Lorem ipsum dolor sit amet vultatup duista. Duis autem vel eum iriure
-          dolor in hendrerit in vulputate velit esse molestie consequat, vel
-          illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-          iusto odio dignissim qui blandit praesent luptatum zzril.
-        </p>
+    <!-- Showcase -->
+    <section id="showcase-header"></section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2 class="m-heading text-center my-1">Trip Catalog</h2>
+      <div class="bottom-line"></div>
+      <p class="lead text-center my-1">Check Out Our Trips</p>
+      <div class="items">
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="text"></div>
+        </div>
       </div>
     </section>
 
@@ -92,6 +99,8 @@
       </div>
     </footer>
 
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Custom JS -->
     <script src="./js/main.js"></script>
   </body>
