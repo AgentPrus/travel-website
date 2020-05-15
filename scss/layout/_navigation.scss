@@ -5,15 +5,19 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     #nav-brand {
       color: #fff;
       font-size: 2rem;
+
+      @include respond-to("xs") {
+        font-size: 1.5rem;
+      }
     }
 
     .nav-menu {
       color: #fff;
-      padding-top: 1rem;
 
       .nav-text {
         font-size: 1.25rem;

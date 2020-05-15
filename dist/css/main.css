@@ -15,19 +15,35 @@ a {
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden; }
+  @media screen and (max-width: 320px) {
+    .container {
+      padding: 0 0.75rem; } }
 
 .current {
   color: #f2f2f2 !important; }
 
 .home-block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 100vh; }
+  display: flex; }
+  @media screen and (min-width: 1224px) {
+    .home-block {
+      height: 100vh; } }
+  .home-block .section-text,
+  .home-block .section-image {
+    width: 50%; }
+  @media screen and (max-width: 767px) {
+    .home-block .section-image {
+      display: none; }
+    .home-block .section-text {
+      width: 100%;
+      height: auto; } }
 
 .post-nav {
   width: 2rem;
   height: 2rem;
   display: block; }
+  @media screen and (max-width: 768px) {
+    .post-nav {
+      display: none; } }
   .post-nav .btn-up {
     display: inline-block;
     border: 1px solid #bbb;
@@ -120,7 +136,7 @@ a {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 5rem 5rem; }
+  padding: 5rem 1rem; }
 
 .blockquote {
   border-top: 1px solid #bbb;
@@ -155,13 +171,16 @@ a {
   z-index: 3; }
   #main-header .container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     #main-header .container #nav-brand {
       color: #fff;
       font-size: 2rem; }
+      @media screen and (max-width: 320px) {
+        #main-header .container #nav-brand {
+          font-size: 1.5rem; } }
     #main-header .container .nav-menu {
       color: #fff;
-      padding-top: 1rem;
       transition: opacity 0.5s ease; }
       #main-header .container .nav-menu .nav-text {
         font-size: 1.25rem; }
